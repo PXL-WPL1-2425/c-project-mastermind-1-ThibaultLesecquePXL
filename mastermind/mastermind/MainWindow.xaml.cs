@@ -73,8 +73,27 @@ namespace mastermind
 
         private void checkButton_Click(object sender, RoutedEventArgs e)
         {
-         
+            CheckComboBox(color1Ellipse, color1ComboBox, 0);
+            CheckComboBox(color2Ellipse, color2ComboBox, 1);
+            CheckComboBox(color3Ellipse, color3ComboBox, 2);
+            CheckComboBox(color4Ellipse, color4ComboBox, 3);
         }
 
+        private void CheckComboBox(Ellipse elipse, ComboBox combobox, int number)
+        {
+            elipse.Stroke = Brushes.Black;
+            elipse.StrokeThickness = 1;
+
+            if (combobox.SelectedIndex == colorsRandom[number])
+            {
+                elipse.Stroke = Brushes.DarkRed;
+                elipse.StrokeThickness = 5;
+            }
+            else if (colorsRandom.Contains(combobox.SelectedIndex))
+            {
+                elipse.Stroke = Brushes.Wheat;
+                elipse.StrokeThickness = 5;
+            }
+        }
     }
 }
