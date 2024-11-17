@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Mastermind" Height="450" Width="800">
     <Grid>
-        <ComboBox Name="color1ComboBox" HorizontalAlignment="Left" Margin="50,231,0,0" VerticalAlignment="Top" Width="100"/>
+        <ComboBox Name="color1ComboBox" HorizontalAlignment="Left" Margin="50,231,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ComboBox_SelectionChanged"/>
         <ComboBox Name="color2ComboBox" HorizontalAlignment="Left" Margin="250,231,0,0" VerticalAlignment="Top" Width="100"/>
         <ComboBox Name="color3ComboBox" HorizontalAlignment="Left" Margin="450,231,0,0" VerticalAlignment="Top" Width="100"/>
         <ComboBox Name="color4ComboBox" HorizontalAlignment="Left" Margin="650,231,0,0" VerticalAlignment="Top" Width="100"/>

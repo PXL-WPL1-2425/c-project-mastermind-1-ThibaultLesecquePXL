@@ -26,7 +26,6 @@ namespace mastermind
         {
             InitializeComponent();
             pickColors();
-            comboBoxItemsInit();
         }
 
         private void pickColors()
@@ -37,14 +36,6 @@ namespace mastermind
             }
 
             this.Title = $"Mastermind ({colorSelectionString[colorsRandom[0]]}, {colorSelectionString[colorsRandom[1]]}, {colorSelectionString[colorsRandom[2]]}, {colorSelectionString[colorsRandom[3]]})";
-        }
-
-        private void comboBoxItemsInit()
-        {
-            color1ComboBox.ItemsSource = colorSelectionString;
-            color2ComboBox.ItemsSource = colorSelectionString;
-            color3ComboBox.ItemsSource = colorSelectionString;
-            color4ComboBox.ItemsSource = colorSelectionString;
         }
     }
 }
