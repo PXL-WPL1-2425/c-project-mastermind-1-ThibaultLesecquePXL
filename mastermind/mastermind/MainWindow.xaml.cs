@@ -49,7 +49,32 @@ namespace mastermind
 
         private void ComboBox_SelectionChanged (object sender, SelectionChangedEventArgs e)
         {
+            ComboBox comboBox = sender as ComboBox;
 
+
+            if (comboBox.Name == "color1ComboBox")
+            {
+                color1Ellipse.Fill = colorSelection[comboBox.SelectedIndex];
+            }
+            else if (comboBox.Name == "color2ComboBox")
+            {
+                color2Ellipse.Fill = colorSelection[comboBox.SelectedIndex];
+            }
+            else if (comboBox.Name == "color3ComboBox")
+            {
+                color3Ellipse.Fill = colorSelection[comboBox.SelectedIndex];
+            }
+            else if (comboBox.Name == "color4ComboBox")
+            {
+                color4Ellipse.Fill = colorSelection[comboBox.SelectedIndex];
+            }
+            
         }
+
+        private void checkButton_Click(object sender, RoutedEventArgs e)
+        {
+         
+        }
+
     }
 }
